@@ -1,0 +1,8 @@
+pycache/
+*.pyc
+dist/
+build/
+*.egg-info
+.venv/
+.poetry/
+.cache/

@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "simple-calculator"
+version = "0.1.0"
+description = "A tiny example package providing simple math helpers."
+license = "MIT"
+authors = ["Dharmender Singh <dharmender071999@gmail.com>"]
+readme = "README.md"
+packages = [
+  { include = "simple-calculator" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pytest = "^8.4.2"
+ruff = "^0.13.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
