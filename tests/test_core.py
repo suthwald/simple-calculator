@@ -1,4 +1,4 @@
-from simple_calculator import add
+from simple_calculator_exl import add
 
 
 def test_add_ints():
