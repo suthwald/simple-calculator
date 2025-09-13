@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "simple-calculator"                       # This is the PyPI name (can have a dash)
+name = "simple-calculator-exl"                       # This is the PyPI name (can have a dash)
 version = "0.1.0"
 description = "A tiny example package providing simple math helpers."
 license = "MIT"
@@ -19,4 +19,4 @@ build-backend = "poetry.core.masonry.api"
 
 # 👇 IMPORTANT: must be an array of tables (each [[...]])
 [[tool.poetry.packages]]
-include = "simple_calculator"
+include = "simple_calculator_exl"
