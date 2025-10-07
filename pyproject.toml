@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "simple-calculator-exl"                       # This is the PyPI name (can have a dash)
-version = "0.1.2"
+version = "0.1.3"
 description = "A tiny example package providing simple math helpers."
 license = "MIT"
 authors = ["Dharmender Singh <dharmender071999@gmail.com>"]
