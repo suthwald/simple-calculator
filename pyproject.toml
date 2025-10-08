@@ -10,6 +10,10 @@ readme = "README.md"
 python = "^3.12"
 streamlit = "^1.50.0"
 streamlit-aggrid = "^1.1.9"
+fastmcp = "^2.12.4"
+fastapi = "^0.118.1"
+google-generativeai = "^0.8.5"
+snowflake-connector-python = "^3.18.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.4.2"
