@@ -1,0 +1,63 @@
+Basic Weather and Time Query:
+Query: "What's the weather and time in New York?"
+Expected Behavior:
+
+Agent1 uses get_weather and get_time separately to fetch the weather ("Sunny, 25°C in New York") and the current time in New York’s timezone.
+Agent2 uses get_weather_and_time to fetch both in a combined response.
+The Supervisor combines the results into a coherent answer, e.g., "In New York, it is sunny with a temperature of 25°C. The current time is [current time in America/New_York]."
+
+
+
+
+Weather-Only Query:
+Query: "Tell me the weather in New York."
+Expected Behavior:
+
+Agent1 uses get_weather to return "Sunny, 25°C in New York."
+Agent2 uses get_weather_and_time, which includes the weather report.
+The Supervisor prioritizes the weather information, likely responding with "The weather in New York is sunny, 25°C."
+
+
+
+
+Time-Only Query:
+Query: "What is the current time in New York?"
+Expected Behavior:
+
+Agent1 uses get_time to return the current time in New York’s timezone.
+Agent2 uses get_weather_and_time, which includes the time.
+The Supervisor focuses on the time, e.g., "The current time in New York is [current time in America/New_York]."
+
+
+
+
+Combined Query with Context:
+Query: "Can you give me the weather and time for New York right now?"
+Expected Behavior: Similar to the first query, both agents fetch weather and time data, and the Supervisor combines them into a single response, e.g., "In New York, it’s currently sunny at 25°C, and the time is [current time]."
+
+
+Invalid City Query:
+Query: "What's the weather and time in London?"
+Expected Behavior:
+
+Both agents return an error since the mock tools only support New York (e.g., "No weather for London" and "No time for London").
+The Supervisor notes the error and responds, e.g., "Sorry, I can only provide weather and time information for New York."
+
+
+
+
+Ambiguous Query:
+Query: "Tell me about New York."
+Expected Behavior:
+
+The agents interpret this as a request for weather and time (based on their instructions).
+The Supervisor provides a combined response with both weather and time, or notes any discrepancies if the agents interpret the query differently.
+
+
+
+
+Edge Case Query:
+Query: "What’s the weather and time in new york?" (lowercase)
+Expected Behavior:
+
+The mock tools handle the lowercase input correctly (since they use city.lower() == "new york"), so the response should be the same as the first query.
