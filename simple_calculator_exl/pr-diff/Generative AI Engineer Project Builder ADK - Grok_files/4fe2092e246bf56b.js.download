@@ -1,0 +1,6 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="0cf6a3a5-e29f-509e-b640-db78f38007ea")}catch(e){}}();
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,426127,t=>{t.v(JSON.parse('{"drawer-title":"Notifications","notifications.action.wants-to-view":"Wants to view your conversation","notifications.bell-button.label":"Open notifications","notifications.empty":"No notifications yet","notifications.error":"Failed to load notifications","notifications.group.earlier":"Earlier","notifications.group.today":"Today","notifications.group.yesterday":"Yesterday","notifications.ignore-button":"Ignore","notifications.ignore-error":"Failed to ignore share request","notifications.ignore-success":"Share request ignored","notifications.retry":"Retry","notifications.share-button":"Share","share-button.share-error":"Failed to share conversation.","team-request-share-button.shared-success":"Access granted!"}'))}]);
+
+//# sourceMappingURL=4c3049d883dbfe4c.js.map
+//# debugId=0cf6a3a5-e29f-509e-b640-db78f38007ea
