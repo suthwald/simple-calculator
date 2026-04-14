@@ -1,0 +1,51 @@
+{
+  "pr_number": 4,
+  "repository": "suthwald/fastapi-simple",
+  "total_files": 2,
+  "generated_at": "2026-04-14T19:56:49.202839Z",
+  "files": [
+    {
+      "file": "fastapi_simple/api.py",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 1,
+      "changes": 7,
+      "added_lines": [
+        "return {\"status\": \"ok\", \"app\": \"fastapi-simple\"}",
+        "",
+        "",
+        "@router.get(\"/greet\")",
+        "def greet(name: str = \"world\"):",
+        "return {\"message\": f\"Hello, {name}!\"}"
+      ],
+      "removed_lines": [
+        "return {\"status\": \"ok\"}"
+      ]
+    },
+    {
+      "file": "tests/test_health.py",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 1,
+      "changes": 14,
+      "added_lines": [
+        "assert response.json() == {\"status\": \"ok\", \"app\": \"fastapi-simple\"}",
+        "",
+        "",
+        "def test_greet_default():",
+        "response = client.get(\"/greet\")",
+        "assert response.status_code == 200",
+        "assert response.json() == {\"message\": \"Hello, world!\"}",
+        "",
+        "",
+        "def test_greet_custom():",
+        "response = client.get(\"/greet\", params={\"name\": \"Dharm\"})",
+        "assert response.status_code == 200",
+        "assert response.json() == {\"message\": \"Hello, Dharm!\"}"
+      ],
+      "removed_lines": [
+        "assert response.json() == {\"status\": \"ok\"}"
+      ]
+    }
+  ]
+}

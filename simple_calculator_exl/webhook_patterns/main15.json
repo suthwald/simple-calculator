@@ -1,0 +1,30 @@
+{
+  "pr_number": 4,
+  "repository": "suthwald/fastapi-simple",
+  "total_files": 2,
+  "generated_at": "2026-04-14T20:27:50.488571Z",
+  "files": [
+    {
+      "file": "fastapi_simple/api.py",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 1,
+      "changes": 7,
+      "added_lines": "    return {\"status\": \"ok\", \"app\": \"fastapi-simple\"}\n\n\n@router.get(\"/greet\")\ndef greet(name: str = \"world\"):\n    return {\"message\": f\"Hello, {name}!\"}",
+      "removed_lines": "    return {\"status\": \"ok\"}",
+      "before_content": "from fastapi import APIRouter\n\nrouter = APIRouter()\n\n\n@router.get(\"/health\")\ndef health_check():\n    return {\"status\": \"ok\"}\n",
+      "after_content": "from fastapi import APIRouter\n\nrouter = APIRouter()\n\n\n@router.get(\"/health\")\ndef health_check():\n    return {\"status\": \"ok\", \"app\": \"fastapi-simple\"}\n\n\n@router.get(\"/greet\")\ndef greet(name: str = \"world\"):\n    return {\"message\": f\"Hello, {name}!\"}\n"
+    },
+    {
+      "file": "tests/test_health.py",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 1,
+      "changes": 14,
+      "added_lines": "    assert response.json() == {\"status\": \"ok\", \"app\": \"fastapi-simple\"}\n\n\ndef test_greet_default():\n    response = client.get(\"/greet\")\n    assert response.status_code == 200\n    assert response.json() == {\"message\": \"Hello, world!\"}\n\n\ndef test_greet_custom():\n    response = client.get(\"/greet\", params={\"name\": \"Dharm\"})\n    assert response.status_code == 200\n    assert response.json() == {\"message\": \"Hello, Dharm!\"}",
+      "removed_lines": "    assert response.json() == {\"status\": \"ok\"}",
+      "before_content": "from fastapi.testclient import TestClient\n\nfrom fastapi_simple.main import app\n\nclient = TestClient(app)\n\n\ndef test_health():\n    response = client.get(\"/health\")\n    assert response.status_code == 200\n    assert response.json() == {\"status\": \"ok\"}\n",
+      "after_content": "from fastapi.testclient import TestClient\n\nfrom fastapi_simple.main import app\n\nclient = TestClient(app)\n\n\ndef test_health():\n    response = client.get(\"/health\")\n    assert response.status_code == 200\n    assert response.json() == {\"status\": \"ok\", \"app\": \"fastapi-simple\"}\n\n\ndef test_greet_default():\n    response = client.get(\"/greet\")\n    assert response.status_code == 200\n    assert response.json() == {\"message\": \"Hello, world!\"}\n\n\ndef test_greet_custom():\n    response = client.get(\"/greet\", params={\"name\": \"Dharm\"})\n    assert response.status_code == 200\n    assert response.json() == {\"message\": \"Hello, Dharm!\"}\n"
+    }
+  ]
+}
