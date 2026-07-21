@@ -1,0 +1,15 @@
+Hi @Sawant, @Sumeet Sushil,
+Thank you for making the previous changes to the document.
+I need a few additional modifications. I am currently working on an agent that reviews pull requests based on PR metadata and code diffs. At the moment, the agent uses only the sections of the documentation that are relevant to these inputs.
+In my version of the document, I created a new Level 1 section titled Software Engineering Standards. Under this section, I grouped the following as subsections:
+Development Standards
+Project Structure & Architecture
+Security Standards
+Configuration Management
+fsutils Library Reference
+Data Quality & Validation
+Deployment Standards
+Could you please help incorporate these changes into the original document?
+Additionally, I will require a few more documentation changes in the next phase, and I will share those details once they are finalized.
+Thanks,
+Dharmender Singh
