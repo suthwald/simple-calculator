@@ -13,3 +13,50 @@ Could you please help incorporate these changes into the original document?
 Additionally, I will require a few more documentation changes in the next phase, and I will share those details once they are finalized.
 Thanks,
 Dharmender Singh
+
+
+
+
+
+
+
+
+
+
+Subject: Assistance Required: GitHub Webhook Unable to Reach Application Endpoint
+
+Hi Team,
+
+We are working on a PR Reviewer Application that automatically reviews a pull request when it is raised by a developer.
+
+Application Flow:
+
+> User action on GitHub PR → GitHub event occurs (e.g., PR opened) → Webhook triggered → POST request to the application endpoint → Application processes the payload
+
+
+
+For the webhook integration:
+
+We created a GitHub App: sdlc-reviewer-agent
+
+Installed the GitHub App on the target repository.
+
+Configured the webhook URL in the GitHub App: https://fs-promo-hub-sdlc-reviewer-preprod.fsapp.corp.cvs.com/api/v1/webhook/github
+
+
+Current Issue:
+
+GitHub is unable to send the webhook request to our application endpoint. The GitHub App reports the following error:
+
+> "We couldn't deliver this payload: failed to connect to host."
+
+
+
+Root Cause (Simplified):
+
+The configured webhook URL points to an internal CVS network address, which is not accessible from the public internet. Since GitHub's webhook servers are hosted externally, they cannot reach our application endpoint.
+
+Could you please advise on the recommended approach to make the application endpoint accessible for GitHub webhooks, or suggest an alternative solution?
+
+Thanks,
+Dharmender Singh
