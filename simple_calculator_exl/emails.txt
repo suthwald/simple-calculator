@@ -60,3 +60,16 @@ Could you please advise on the recommended approach to make the application endp
 
 Thanks,
 Dharmender Singh
+
+
+
+
+
+Hi @Gavhane, NamrataDattatraya,
+Hope you are doing well.
+I wanted to follow up on the GitHub App webhook connectivity issue discussed below. Could you please let me know if there are any updates after reviewing the Slack conversation or from the Platform Support team?
+This issue is currently blocking our development as well as the rollout of the PR Reviewer Agent. Since the request has been pending for some time and is impacting our timeline, we would appreciate it if this could be prioritized.
+Please let us know if there is a recommended approach or an alternative solution we can explore.
+Thank you for your support.
+Regards,
+Dharmender Singh
