@@ -1,0 +1,17 @@
+Requirement: Application Management in ADA Platform
+
+1. Applications Section
+
+- Add a new Applications section to the Left Navigation of the ADA platform.
+- This section will allow users to view and manage applications.
+
+2. Create Custom Applications
+
+- Users should be able to create customized applications within the Applications section.
+- Each application can be configured with one or more agents based on the required workflow.
+
+3. Agent Integration
+
+- An application can invoke an external conversation through an agent created in ADA.
+- Agents can also act as supervisors/orchestrators, responsible for invoking and coordinating multiple applications.
+- This will allow applications and agents to work together to support complex workflows.
