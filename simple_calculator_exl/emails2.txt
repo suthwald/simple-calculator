@@ -15,3 +15,37 @@ Requirement: Application Management in ADA Platform
 - An application can invoke an external conversation through an agent created in ADA.
 - Agents can also act as supervisors/orchestrators, responsible for invoking and coordinating multiple applications.
 - This will allow applications and agents to work together to support complex workflows.
+
+
+
+
+
+
+Requirement: Application Management in ADA Platform
+
+1. Applications Section
+
+- Add a new Applications section to the Left Navigation of the ADA platform.
+- This section will allow users to view, create, and manage applications.
+
+2. Create Customized Applications
+
+- Users should be able to create customized applications within the Applications section.
+- Applications should be configurable based on the required business use case and workflow.
+
+3. Agent and Application Integration
+
+a) Invoke External Conversational Applications
+
+- An external conversational application can be invoked through an agent created in the ADA platform.
+- The ADA agent will act as an interface/orchestrator to initiate the conversation with the external application.
+
+b) Agent as a Supervisor
+
+- An ADA agent can also act as a supervisor/orchestrator.
+- The supervisor agent can invoke and coordinate multiple conversational applications based on the user's request or workflow.
+- This enables multiple applications to work together as part of a single conversational experience.
+
+4. Objective
+
+The objective is to provide a centralized Applications section in ADA that enables users to create and manage customized applications and integrate them with ADA agents, including support for external conversational applications and multi-application orchestration.
